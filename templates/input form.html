@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Detail Entrance</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="section">
+
+        <form action="/register" method="POST">
+          <h1>Please enter some simple details</h1>
+
+          <div class="form-group">
+            <label>Name</label>
+            <input type="text" class="form-control" id="name" name="name" placeholder="Enter your full name">
+          </div>
+
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email">
+          </div>
+
+          <h1>Please enter the following information for your 8-9am lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[0] }}" name="{{ idList[0] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[1] }}" name="{{ idList[1] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[2] }}" name="{{ idList[2] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[3] }}" name="{{ idList[3] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[4] }}" name="{{ idList[4] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 9-10am lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[5] }}" name="{{ idList[5] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[6] }}" name="{{ idList[6] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[7] }}" name="{{ idList[7] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[8] }}" name="{{ idList[8] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[9] }}" name="{{ idList[9] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 10-11am lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[10] }}" name="{{ idList[10] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[11] }}" name="{{ idList[11] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[12] }}" name="{{ idList[12] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[13] }}" name="{{ idList[13] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[14] }}" name="{{ idList[14] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+
+          <h1>Please enter the following information for your 11am lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[15] }}" name="{{ idList[15] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[16] }}" name="{{ idList[16] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[17] }}" name="{{ idList[17] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[18] }}" name="{{ idList[18] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[19] }}" name="{{ idList[19] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 12-1pm lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[20] }}" name="{{ idList[20] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[21] }}" name="{{ idList[21] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[22] }}" name="{{ idList[22] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[23] }}" name="{{ idList[23] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[24] }}" name="{{ idList[24] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 1-2pm lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[25] }}" name="{{ idList[25] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[26] }}" name="{{ idList[26] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[27] }}" name="{{ idList[27] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[28] }}" name="{{ idList[28] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[29] }}" name="{{ idList[29] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 2-3pm lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[30] }}" name="{{ idList[30] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[31] }}" name="{{ idList[31] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[32] }}" name="{{ idList[32] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[33] }}" name="{{ idList[33] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[34] }}" name="{{ idList[34] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 3-4pm lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[35] }}" name="{{ idList[35] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[36] }}" name="{{ idList[36] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[37] }}" name="{{ idList[37] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[38] }}" name="{{ idList[38] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[39] }}" name="{{ idList[39] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <h1>Please enter the following information for your 4-5pm lectures</h1>
+
+          <div class="form-group">
+            <label>{{ nameList[0] }}</label>
+            <input type="{{ typeList[0] }}" class="form-control" id="{{ idList[40] }}" name="{{ idList[40] }}" placeholder="{{ placeholder[0] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[1] }}</label>
+            <input type="{{ typeList[1] }}" class="form-control" id="{{ idList[41] }}" name="{{ idList[41] }}" placeholder="{{ placeholder[1] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[2] }}</label>
+            <input type="{{ typeList[2] }}" class="form-control" id="{{ idList[42] }}" name="{{ idList[42] }}" placeholder="{{ placeholder[2] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[3] }}</label>
+            <input type="{{ typeList[3] }}" class="form-control" id="{{ idList[43] }}" name="{{ idList[43] }}" placeholder="{{ placeholder[3] }}">
+          </div>
+
+          <div class="form-group">
+            <label>{{ nameList[4] }}</label>
+            <input type="{{ typeList[4] }}" class="form-control" id="{{ idList[44] }}" name="{{ idList[44] }}" placeholder="{{ placeholder[4] }}">
+          </div>
+
+          <button type="submit" class="btn btn-primary">Next</button>
+
+        </form>
+        </div>
+      </div>
+     </div>
+    </div>
+    {% endblock %}
+  </body>
+</html>

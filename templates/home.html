@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Easter Eggs Are cool</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/template.css') }}">
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="section">
+      <h1><span>Main Page & Details</span></h1>
+
+      <p> The purpose of this website is to further make our univeristy timetables easy to use given the univeristies lack of
+        tutorial and lab support within timetables unless approved by lecturers, as far as im aware. </p>
+        <br/>
+        <p> This website allows access to timetables on any internet connected device so its perfect for any student on the go
+          or at home wanting to see what they have on next, and with the choice of making your own lesson labels it means
+          your timetable looks the way you want, not over cluttered like the one provided by the univeristy. For any example of
+          what i mean search for the <strong>test</strong> user's timetable.</p>
+
+
+      <hr/>
+      <p align="center"><big>My information:</big>
+        <br/>
+        Email me! <a href="mailto:ethan@unserializable.com?subject='Inquiry via website.'"><ins>ethan@unserializable.com</ins></a>
+        <br/>
+        My Github! <a href="https://github.com/Skelmis"><font color="blue"><ins>Skelmis</ins></font></a>
+        <br/>
+        Add me on discord! <font color="blue"><ins>Skelmis#9135</ins></font>
+        <br/>
+        Add me on snapchat! <font color="blue"><ins>ethanmh11001010</ins></font>
+    </div>
+
+    <div class="section">
+      <h1><span>Timetable search</span></h1>
+      <form action="/" method="POST">
+        <div class="form-group">
+          <label>Timetable Holders Name:</label>
+          <input type="text" class="form-control" id="name" name="name" placeholder="Please enter the name the timetable is saved under">
+        </div>
+        <button type="submit" class="btn btn-primary">Search!</button>
+      </form>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>

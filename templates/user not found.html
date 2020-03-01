@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Invalid Operation</title>
+  </head>
+  <body>
+    {% extends "template.html" %}
+    {% block content %}
+
+    <div class="section">
+      <h1> Invalid User: {{ username }}</h1>
+      <p> Sorry to say but the user you attempted to find
+      is not in the data set. </p>
+    </div>
+
+    {% endblock %}
+  </body>
+</html>
